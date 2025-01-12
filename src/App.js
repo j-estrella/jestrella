@@ -306,47 +306,47 @@ function App() {
     <section className='mt-40'> {/*  VID 1 NVIDIA */}
       <div className="grid grid-cols-12 gap-4 mt-24">
         <div className="col-span-6 lg:col-span-4 w-full mx-auto">
-          <video  controls autoPlay muted loop playsinline>
+          <video autoplay loop muted controls webkit-playsinline playsinline>
             <source src={NvidiaVideo1} type="video/mp4"/>
           </video>
         </div>
         <div className="col-span-6 lg:col-span-4 w-full mx-auto">
-          <video  controls autoPlay muted loop playsinline>
+          <video autoplay loop muted controls webkit-playsinline playsinline>
             <source src={NvidiaVideo2} type="video/mp4"/>
           </video>
         </div>
         <div className="col-span-6 lg:col-span-4 w-full mx-auto">
-          <video  controls autoPlay muted loop playsinline>
+          <video autoplay loop muted controls webkit-playsinline playsinline>
             <source src={NvidiaVideo3} type="video/mp4"/>
           </video>
         </div>
         <div className="col-span-6 lg:col-span-4 w-full mx-auto">
-          <video  controls autoPlay muted loop playsinline>
+          <video autoplay loop muted controls webkit-playsinline playsinline>
             <source src={NvidiaVideo4} type="video/mp4"/>
           </video>
         </div>
         <div className="col-span-6 lg:col-span-4 w-full mx-auto">
-          <video  controls autoPlay muted loop playsinline>
+          <video autoplay loop muted controls webkit-playsinline playsinline>
             <source src={NvidiaVideo5} type="video/mp4"/>
           </video>
         </div>
         <div className="col-span-6 lg:col-span-4 w-full mx-auto">
-          <video  controls autoPlay muted loop playsinline>
+          <video autoplay loop muted controls webkit-playsinline playsinline>
             <source src={NvidiaVideo6} type="video/mp4"/>
           </video>
         </div>
         <div className="col-span-6 lg:col-span-4 w-full mx-auto">
-          <video  controls autoPlay muted loop playsinline>
+          <video autoplay loop muted controls webkit-playsinline playsinline>
             <source src={NvidiaVideo7} type="video/mp4"/>
           </video>
         </div>
         <div className="col-span-6 lg:col-span-4 w-full mx-auto">
-          <video  controls autoPlay muted loop playsinline>
+          <video autoplay loop muted controls webkit-playsinline playsinline>
             <source src={NvidiaVideo8} type="video/mp4"/>
           </video>
         </div>
         <div className="col-span-6 lg:col-span-4 w-full mx-auto">
-          <video  controls autoPlay muted loop playsinline>
+          <video autoplay loop muted controls webkit-playsinline playsinline>
             <source src={NvidiaVideo9} type="video/mp4"/>
           </video>
         </div>
@@ -356,37 +356,37 @@ function App() {
     <section className='mt-40'> {/*  VID 2 LEV */}
       <div className='grid grid-cols-12 gap-4 my-12'>
         <div className="col-span-6 lg:col-span-4 w-full mx-auto">
-          <video  controls autoPlay muted loop playsinline>
+          <video autoplay loop muted controls webkit-playsinline playsinline>
             <source src={LevVideo1} type="video/mp4"/>
           </video>
         </div>
         <div className="col-span-6 lg:col-span-4 w-full mx-auto">
-          <video  controls autoPlay muted loop playsinline>
+          <video autoplay loop muted controls webkit-playsinline playsinline>
             <source src={LevVideo2} type="video/mp4"/>
           </video>
         </div>
         <div className="col-span-6 lg:col-span-4 w-full mx-auto">
-          <video  controls autoPlay muted loop playsinline>
+          <video autoplay loop muted controls webkit-playsinline playsinline>
             <source src={LevVideo3} type="video/mp4"/>
           </video>
         </div>
         <div className="col-span-6 lg:col-span-4 w-full mx-auto">
-          <video  controls autoPlay muted loop playsinline>
+          <video autoplay loop muted controls webkit-playsinline playsinline>
             <source src={LevVideo4} type="video/mp4"/>
           </video>
         </div>
         <div className="col-span-6 lg:col-span-4 w-full mx-auto">
-          <video  controls autoPlay muted loop playsinline>
+          <video autoplay loop muted controls webkit-playsinline playsinline>
             <source src={LevVideo5} type="video/mp4"/>
           </video>
         </div>
         <div className="col-span-6 lg:col-span-4 w-full mx-auto">
-          <video  controls autoPlay muted loop playsinline>
+          <video autoplay loop muted controls webkit-playsinline playsinline>
             <source src={LevVideo6} type="video/mp4"/>
           </video>
         </div>
         <div className="col-span-6 lg:col-span-4 w-full mx-auto">
-          <video  controls autoPlay muted loop playsinline>
+          <video autoplay loop muted controls webkit-playsinline playsinline>
             <source src={LevVideo7} type="video/mp4"/>
           </video>
         </div>
@@ -394,7 +394,7 @@ function App() {
           <img src={LevVideo8} />
         </div>
         <div className="col-span-6 lg:col-span-4 w-full mx-auto">
-          <video  controls autoPlay muted loop playsinline>
+          <video autoplay loop muted controls webkit-playsinline playsinline>
             <source src={LevVideo9} type="video/mp4"/>
           </video>
         </div>
@@ -404,32 +404,32 @@ function App() {
     <section className='mt-40'> {/*  VID 3 BROADCAST */}
       <div className="grid grid-cols-12 gap-4 mt-24">
         <div className="col-span-6 lg:col-span-4 w-full mx-auto">
-          <video  controls autoPlay muted loop playsinline>
+          <video autoplay loop muted controls webkit-playsinline playsinline>
             <source src={BroadcastVideo1} type="video/mp4"/>
           </video>
         </div>
         <div className="col-span-6 lg:col-span-4 w-full mx-auto">
-          <video  controls autoPlay muted loop playsinline>
+          <video autoplay loop muted controls webkit-playsinline playsinline>
             <source src={BroadcastVideo2} type="video/mp4"/>
           </video>
         </div>
         <div className="col-span-6 lg:col-span-4 w-full mx-auto">
-          <video  controls autoPlay muted loop playsinline>
+          <video autoplay loop muted controls webkit-playsinline playsinline>
             <source src={BroadcastVideo3} type="video/mp4"/>
           </video>
         </div>
         <div className="col-span-6 lg:col-span-4 w-full mx-auto">
-          <video  controls autoPlay muted loop playsinline>
+          <video autoplay loop muted controls webkit-playsinline playsinline>
             <source src={BroadcastVideo4} type="video/mp4"/>
           </video>
         </div>
         <div className="col-span-6 lg:col-span-4 w-full mx-auto">
-          <video  controls autoPlay muted loop playsinline>
+          <video autoplay loop muted controls webkit-playsinline playsinline>
             <source src={BroadcastVideo5} type="video/mp4"/>
           </video>
         </div>
         <div className="col-span-6 lg:col-span-4 w-full mx-auto">
-          <video  controls autoPlay muted loop playsinline>
+          <video autoplay loop muted controls webkit-playsinline playsinline>
             <source src={BroadcastVideo6} type="video/mp4"/>
           </video>
         </div>

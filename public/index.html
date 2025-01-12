@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="image" content="/logo.ico">
+    <meta property="image:type" content="image/ico">
+    <meta property="image:width" content="200">
+    <meta property="image:height" content="200">	
+    <meta property="title" content="Josh Estrella Portfolio"/>
+    <meta property="description" content="Personal Portfolio of Josh Estrella"/>
+    <link rel="icon" type="image/x-icon" href="./logo.ico">
+    <title>Josh Estrella | Portfolio</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <script>
+      window.addEventListener('scroll', () => {
+          const video = document.getElementById('video');
+          if (video && video.getBoundingClientRect().top < window.innerHeight) {
+              video.play();
+          }
+      });
+      </script>
+  </body>
+</html>

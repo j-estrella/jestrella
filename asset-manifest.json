@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/jestrella/static/css/main.97a7e1b2.css",
-    "main.js": "/jestrella/static/js/main.43e4b688.js",
+    "main.css": "/jestrella/static/css/main.471da688.css",
+    "main.js": "/jestrella/static/js/main.bc6e9a76.js",
     "static/js/488.7a4d4432.chunk.js": "/jestrella/static/js/488.7a4d4432.chunk.js",
     "static/media/lev 7-1.mp4": "/jestrella/static/media/lev 7-1.eb487332793cde85b82f.mp4",
     "static/media/personal-1.png": "/jestrella/static/media/personal-1.02d180a134128a83ee2e.png",
@@ -66,12 +66,12 @@
     "static/media/INTEGREON COVER.png": "/jestrella/static/media/INTEGREON COVER.b01e6886ca813da94ea7.png",
     "static/media/BroadcastSoftware1.png": "/jestrella/static/media/BroadcastSoftware1.b5c1a2df6476ac650a18.png",
     "index.html": "/jestrella/index.html",
-    "main.97a7e1b2.css.map": "/jestrella/static/css/main.97a7e1b2.css.map",
-    "main.43e4b688.js.map": "/jestrella/static/js/main.43e4b688.js.map",
+    "main.471da688.css.map": "/jestrella/static/css/main.471da688.css.map",
+    "main.bc6e9a76.js.map": "/jestrella/static/js/main.bc6e9a76.js.map",
     "488.7a4d4432.chunk.js.map": "/jestrella/static/js/488.7a4d4432.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.97a7e1b2.css",
-    "static/js/main.43e4b688.js"
+    "static/css/main.471da688.css",
+    "static/js/main.bc6e9a76.js"
   ]
 }

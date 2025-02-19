@@ -116,7 +116,7 @@ function App() {
     <>
     {/* BTN RETURN TOP  */}
     <IoArrowUpCircle  id="scroll-top"  onClick={handleReturnToTop} 
-      className="w-12 h-12  fixed bottom-0 right-0 m-8 text-white cursor-pointer hidden"/>
+      className="w-12 h-12 z-50 fixed bottom-0 right-0 m-8 text-white cursor-pointer hidden"/>
 
     <section className="h-32 flex items-center gap-8" id="navbar"> {/*  NAVBAR */}
       <div className="flex-shrink-0 basis-16 flex justify-center items-center">

@@ -1,4 +1,5 @@
-import { useEffect, useState } from 'react';
+import { useEffect} from 'react';
+import { IoArrowUpCircle } from "react-icons/io5";
 import './App.css';
 import icon from './assets/img/icon.png';
 import dp1 from './assets/img/dp1.png';
@@ -77,20 +78,47 @@ import Photog3 from './assets/img/photography/photog-3.png';
 import PersonalBanner from './assets/img/banner/PERSONAL-PROJECT.png';
 import Personal1 from './assets/img/personal-project/personal-1.png';
 import { BiSolidRightArrow } from "react-icons/bi";
-import { CiLocationOn } from "react-icons/ci";
 import { MdOutlineEmail } from "react-icons/md";
 import { CiPhone } from "react-icons/ci";
 
-
-
 function App() {
+  const handleReturnToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  }
   useEffect(() => {
     document.querySelector("#year").innerHTML = new Date().getFullYear();
+
+    const scrollHandler = () => {
+      const returnTopButton = document.querySelector('#scroll-top');
+
+      if (returnTopButton) {
+        if (window.scrollY === 0) {
+          returnTopButton.classList.add("hidden");
+        } else {
+          returnTopButton.classList.remove("hidden");
+        }
+      }
+    };
+
+    window.addEventListener('scroll', scrollHandler);
+
+    scrollHandler();
+    
+    return () => {
+      window.removeEventListener('scroll', scrollHandler);
+    };
   },[])
 
   return (
     <>
-    <section className="h-32 flex items-center gap-8"> {/*  NAVBAR */}
+    {/* BTN RETURN TOP  */}
+    <IoArrowUpCircle  id="scroll-top"  onClick={handleReturnToTop} 
+      className="w-12 h-12  fixed bottom-0 right-0 m-8 text-white cursor-pointer hidden"/>
+
+    <section className="h-32 flex items-center gap-8" id="navbar"> {/*  NAVBAR */}
       <div className="flex-shrink-0 basis-16 flex justify-center items-center">
         {/* <div className='w-20 h-20 bg-white rounded-full'></div> */}
         <img src={icon} className='w-12 h-12' alt="Seb Logo"/>
@@ -293,35 +321,35 @@ function App() {
         <div className='col-span-7 flex flex-col uppercase text-lg md:text-3xl tracking-wider gap-4'>
           <div className='flex gap-4'>
             <div><BiSolidRightArrow className='mt-1'/></div>
-            <p>Broadcast & Overlays</p>
+            <a href="#portfolio">Broadcast & Overlays</a>
           </div>
           <div className='flex gap-4'>
             <div><BiSolidRightArrow className='mt-1'/></div>
-            <p>Branding & Identity</p>
+            <a href="#branding">Branding & Identity</a>
           </div>
           <div className='flex gap-4'>
             <div><BiSolidRightArrow className='mt-1'/></div>
-            <p>Logo Design</p>
+            <a href="#logo">Logo Design</a>
           </div>
           <div className='flex gap-4'>
             <div><BiSolidRightArrow className='mt-1'/></div>
-            <p>Social Media Poster</p>
+            <a href="#socmed">Social Media Poster</a>
           </div>
           <div className='flex gap-4'>
             <div><BiSolidRightArrow className='mt-1'/></div>
-            <p>Presentation Design</p>
+            <a href="#presentation">Presentation Design</a>
           </div>
           <div className='flex gap-4'>
             <div><BiSolidRightArrow className='mt-1'/></div>
-            <p>Other Projects</p>
+            <a href="#other-projects">Other Projects</a>
           </div>
           <div className='flex gap-4'>
             <div><BiSolidRightArrow className='mt-1'/></div>
-            <p>Photography</p>
+            <a href="#photography">Photography</a>
           </div>
           <div className='flex gap-4'>
             <div><BiSolidRightArrow className='mt-1'/></div>
-            <p>Personal Projects</p>
+            <a href="#personal-projects">Personal Projects</a>
           </div>
         </div>
       </div>
@@ -473,7 +501,7 @@ function App() {
       </div>
     </section>
 
-    <section className='md:mt-60 mt-32'> {/*  BRANDING */}
+    <section className='md:mt-60 mt-32' id="branding"> {/*  BRANDING */}
       <img src={BrandingBanner} className='w-full' alt="Branding banner image"/>
     </section>
 
@@ -493,7 +521,7 @@ function App() {
       <img src={Branding4} className="w-full" alt="Sara Branding image"/>
     </section>
 
-    <section className='md:mt-60 mt-32'> {/*  LOGO */}
+    <section className='md:mt-60 mt-32' id="logo"> {/*  LOGO */}
       <img src={LogoBanner} className='w-full' alt="Logo banner image"/>
     </section>
 
@@ -501,7 +529,7 @@ function App() {
       <img src={Logo1} className="w-full" alt="Logo 1 image"/>
     </section>
 
-    <section className='md:mt-40 mt-20'> {/*  SOCMED */}
+    <section className='md:mt-40 mt-20' id="socmed"> {/*  SOCMED */}
       <img src={SocmedBanner} className='w-full' alt="Social media banner image"/>
     </section>
 
@@ -517,7 +545,7 @@ function App() {
       <img src={Socmed3} className="w-full" alt="Social Media 3 image"/>
     </section>
 
-    <section className='md:mt-40 mt-20'> {/*  PRESENTATION AND DESIGN */}
+    <section className='md:mt-40 mt-20' id="presentation"> {/*  PRESENTATION AND DESIGN */}
       <img src={PresentationBanner} className='w-full' alt="Presentation banner image"/>
     </section>
 
@@ -525,7 +553,7 @@ function App() {
       <img src={Presentation1} className='w-full' alt="Presentation 1 image"/>
     </section>
 
-    <section className='md:mt-60 mt-32'> {/*  OTHER PROJECTS */}
+    <section className='md:mt-60 mt-32' id="other-projects"> {/*  OTHER PROJECTS */}
       <img src={OtherBanner} className='w-full' alt="Other projects banner image"/>
     </section>
 
@@ -533,7 +561,7 @@ function App() {
       <img src={Other1} className='w-full' alt="Other project 1 image"/>
     </section>
 
-    <section className='md:mt-60 mt-32'> {/*  PHOTOGRAPHY */}
+    <section className='md:mt-60 mt-32' id="photography"> {/*  PHOTOGRAPHY */}
       <img src={PhotographyBanner} className='w-full' alt="Photography banner image"/>
     </section>
 
@@ -549,7 +577,7 @@ function App() {
       <img src={Photog3} className='w-full' alt="Photography 3 image"/>
     </section>
 
-    <section className='md:mt-60 mt-32'> {/*  PERSONAL */}
+    <section className='md:mt-60 mt-32' id="personal-projects"> {/*  PERSONAL */}
       <img src={PersonalBanner} className='w-full' alt="Personal banner image"/>
     </section>
 

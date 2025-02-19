@@ -1,6 +1,9 @@
+import { useEffect, useState } from 'react';
 import './App.css';
 import icon from './assets/img/icon.png';
-import dp from './assets/img/dp.png';
+import dp1 from './assets/img/dp1.png';
+import dp2 from './assets/img/dp2.jpg';
+import Resume from './assets/file/Josh Estrella Resume.pdf';
 import EditingSoftware1 from './assets/img/software/EditingSoftware1.png';
 import EditingSoftware2 from './assets/img/software/EditingSoftware2.png';
 import EditingSoftware3 from './assets/img/software/EditingSoftware3.png';
@@ -23,6 +26,7 @@ import NaosBanner from './assets/img/work/NAOS COVER.png';
 import IntegreonBanner from './assets/img/work/INTEGREON COVER.png';
 import SenateBanner from './assets/img/work/SENATE COVER.png';
 import WedroolBanner from './assets/img/work/WE DROOL COVER.png';
+import ContentBanner from './assets/img/content.png';
 import BroadcastBanner from './assets/img/banner/BROADCAST-PAGE.png';
 import NvidiaVideo1 from './assets/vid/nvidia/NVIDIA 1.mp4';
 import NvidiaVideo2 from './assets/vid/nvidia/NVIDIA 2-1.mp4';
@@ -51,18 +55,39 @@ import BroadcastVideo6 from './assets/vid/broadcast/broadcast6.mp4';
 import BroadcastVideo7 from './assets/vid/broadcast/broadcast7.jpg';
 import BroadcastVideo8 from './assets/vid/broadcast/broadcast8.jpg';
 import BroadcastVideo9 from './assets/vid/broadcast/broadcast9.jpg';
-import FreeFromLimitBranding from './assets/img/banner/FREE-FROM-LIMIT-BRANDING.png';
-import TestCanva from './assets/img/banner/test-canva.png';
-import SaraBranding from './assets/img/banner/SARA-BRANDING.png';
+import BrandingBanner from  './assets/img/banner/BRANDING-BANNER.png';
+import Branding1 from './assets/img/branding/branding-1.png';
+import Branding2 from './assets/img/branding/branding-2.png';
+import Branding3 from './assets/img/branding/branding-3.png';
+import Branding4 from './assets/img/branding/branding-4.png';
+import LogoBanner from './assets/img/banner/LOGO-DESIGN.png';
+import Logo1 from './assets/img/logo/LOGO COMPILATION-01.png';
+import SocmedBanner from './assets/img/banner/SOCIAL-MEDIA.png';
 import Socmed1 from './assets/img/socmed/socmed-1.png';
 import Socmed2 from './assets/img/socmed/socmed-2.png';
 import Socmed3 from './assets/img/socmed/socmed-3.png';
+import PresentationBanner from './assets/img/banner/PRESENTATION-BANNER.png';
+import Presentation1 from './assets/img/presentation/PRESENTATION DESIGN.png';
+import OtherBanner from './assets/img/banner/OTHER-PROJECTS.png';
+import Other1 from './assets/img/other-project/other portfolio-01.png';
+import PhotographyBanner from './assets/img/banner/PHOTOGRAPHY-BANNER.png';
+import Photog1 from './assets/img/photography/photog-1.png';
+import Photog2 from './assets/img/photography/photog-2.png';
+import Photog3 from './assets/img/photography/photog-3.png';
+import PersonalBanner from './assets/img/banner/PERSONAL-PROJECT.png';
+import Personal1 from './assets/img/personal-project/personal-1.png';
 import { BiSolidRightArrow } from "react-icons/bi";
 import { CiLocationOn } from "react-icons/ci";
 import { MdOutlineEmail } from "react-icons/md";
 import { CiPhone } from "react-icons/ci";
 
+
+
 function App() {
+  useEffect(() => {
+    document.querySelector("#year").innerHTML = new Date().getFullYear();
+  },[])
+
   return (
     <>
     <section className="h-32 flex items-center gap-8"> {/*  NAVBAR */}
@@ -93,11 +118,13 @@ function App() {
               engaging content. Dedicated to delivering high-quality work, I am passionate
               about design and committed to exceeding client expectations. 
             </p>
-            <button className="btn h-12 w-44 bg-white text-black uppercase px-4 mt-8">My Resume</button>
+            <a href={Resume} target="_blank">
+              <button className="btn h-12 w-44 bg-white text-black uppercase px-4 mt-8">My Resume</button>
+            </a>
         </div>
 
         <div className='col-span-12 lg:col-span-5 order-1 lg:order-2'>
-            <img src={dp} alt="Seb Picture"/>
+            <img src={dp1} alt="Seb Picture"/>
         </div>
     </section>  
 
@@ -105,7 +132,7 @@ function App() {
       <hr className="w-full border" />
     </section>
 
-    <section className='mt-40'> {/*  EXPERTISE */}
+    <section className='md:mt-40 mt-20'> {/*  EXPERTISE */}
       <div className='flex flex-col gap-4'>
         <p className='text-7xl font-bold uppercase'>Expertise</p>
         <hr className="w-full sm:w-32 mx-auto sm:mx-0 border-4" />
@@ -185,7 +212,7 @@ function App() {
 
     </section>
 
-    <section className='mt-40' id="work"> {/*  WORK EXP */}
+    <section className='md:mt-40 mt-20' id="work"> {/*  WORK EXP */}
       <div className='flex flex-col gap-4'>
         <p className='text-7xl font-bold uppercase'>Work Experience</p>
         <hr className="w-56 border-4" />
@@ -194,7 +221,7 @@ function App() {
       <div className="grid grid-cols-4 gap-4 my-12">
         <div className="col-span-2 lg:col-span-1 flex flex-col justify-between border border-white text-center rounded-lg p-4 ">
           <div className="flex flex-col gap-4 flex-grow">
-            <img src={NaosBanner} alt="Logo" className="mx-auto rounded-lg" />
+            <img src={NaosBanner} alt="NAOS logo" className="mx-auto rounded-lg" />
             <h2 className="text-2xl font-bold">NAOS ESPORTS</h2>
             <p className="text-2xl">MULTIMEDIA ARTIST</p>
           </div>
@@ -203,7 +230,7 @@ function App() {
 
         <div className="col-span-2 lg:col-span-1 flex flex-col justify-between border border-white text-center rounded-lg p-4">
           <div className="flex flex-col gap-4 flex-grow">
-            <img src={NaosBanner} alt="Logo" className="mx-auto" />
+            <img src={NaosBanner} alt="NAOS logo" className="mx-auto" />
             <h2 className="text-2xl font-bold">NAOS ESPORTS</h2>
             <p className="text-2xl">COMMUNITY AND EVENTS CREATIVE</p>
           </div>
@@ -212,16 +239,16 @@ function App() {
 
         <div className="col-span-2 lg:col-span-1 flex flex-col justify-between border border-white text-center rounded-lg p-4 ">
           <div className="flex flex-col gap-4 flex-grow">
-            <img src={IntegreonBanner} alt="Logo" className="mx-auto rounded-lg" />
+            <img src={IntegreonBanner} alt="Integreon logo" className="mx-auto rounded-lg" />
             <h2 className="text-2xl font-bold">INTEGREON INC.</h2>
-            <p className="text-2xl">MULTIMEDIA ARTIST</p>
+            <p className="text-2xl">DESIGN ASSOCIATE</p>
           </div>
           <p className="text-xl italic mt-auto">(2024-2025)</p>
         </div>
 
         <div className="col-span-2 lg:col-span-1 flex flex-col justify-between border border-white text-center rounded-lg p-4 ">
           <div className="flex flex-col gap-4 flex-grow">
-            <img src={IntegreonBanner} alt="Logo" className="mx-auto rounded-lg" />
+            <img src={IntegreonBanner} alt="Integreon logo" className="mx-auto rounded-lg" />
             <h2 className="text-2xl font-bold">INTEGREON INC.</h2>
             <p className="text-2xl">INDEPENDENT GRAPHIC SPECIALIST</p>
           </div>
@@ -230,7 +257,7 @@ function App() {
         
         <div className="col-span-2 lg:col-span-1 flex flex-col justify-between border border-white text-center rounded-lg p-4 ">
           <div className="flex flex-col gap-4 flex-grow">
-            <img src={IntegreonBanner} alt="Logo" className="mx-auto rounded-lg" />
+            <img src={IntegreonBanner} alt="Integreon logo" className="mx-auto rounded-lg" />
             <h2 className="text-2xl font-bold">INTEGREON INC.</h2>
             <p className="text-2xl">GRAPHIC SPECIALIST</p>
           </div>
@@ -239,7 +266,7 @@ function App() {
 
         <div className="col-span-2 lg:col-span-1 flex flex-col justify-between border border-white text-center rounded-lg p-4 ">
           <div className="flex flex-col gap-4 flex-grow">
-            <img src={SenateBanner} alt="Logo" className="mx-auto rounded-lg" />
+            <img src={SenateBanner} alt="Senate logo" className="mx-auto rounded-lg" />
             <h2 className="text-2xl font-bold">SENATE PHILIPPINES</h2>
             <p className="text-2xl">GRAPHIC DESIGNER INTERNSHIP</p>
           </div>
@@ -248,7 +275,7 @@ function App() {
 
         <div className="col-span-2 lg:col-span-1 flex flex-col justify-between border border-white text-center rounded-lg p-4 ">
           <div className="flex flex-col gap-4 flex-grow">
-            <img src={WedroolBanner} alt="Logo" className="mx-auto rounded-lg" />
+            <img src={WedroolBanner} alt="Wedrool logo" className="mx-auto rounded-lg" />
             <h2 className="text-2xl font-bold">WEDROOL CLOTHING</h2>
             <p className="text-2xl">GRAPHIC DESIGNER ON-THE-JOB TRAINING</p>
           </div>
@@ -257,10 +284,11 @@ function App() {
       </div>
     </section>
     
-    <section className='mt-60'> {/*  CONTENTS */}
+    <section className='md:mt-60 mt-32'> {/*  CONTENTS */}
       <div className='flex flex-col md:flex-row items-center justify-center gap-8'>
         <div className='col-span-5 my-auto'>
-          <div className='w-96 h-60 bg-white'></div>
+          {/* <div className='w-96 h-60 bg-white'></div> */}
+          <img src={ContentBanner} className='h-60' alt="Content banner image"/>
         </div>
         <div className='col-span-7 flex flex-col uppercase text-lg md:text-3xl tracking-wider gap-4'>
           <div className='flex gap-4'>
@@ -299,11 +327,11 @@ function App() {
       </div>
     </section>
 
-    <section className='mt-60' id="portfolio"> {/*  BROADCAST AND OVERLAYS */}
-      <img src={BroadcastBanner} className='w-full'/>
+    <section className='md:mt-60 mt-32' id="portfolio"> {/*  BROADCAST AND OVERLAYS */}
+      <img src={BroadcastBanner} className='w-full' alt="Broadcast and overlays banner image"/>
     </section>
 
-    <section className='mt-40'> {/*  VID 1 NVIDIA */}
+    <section className='md:mt-40 mt-20'> {/*  VID 1 NVIDIA */}
       <div className="grid grid-cols-12 gap-4 mt-24">
         <div className="col-span-6 lg:col-span-4 w-full mx-auto">
           <video autoPlay loop muted controls playsInline webkit-playsinline>
@@ -353,7 +381,7 @@ function App() {
       </div>
     </section>
 
-    <section className='mt-40'> {/*  VID 2 LEV */}
+    <section className='md:mt-40 mt-20'> {/*  VID 2 LEV */}
       <div className='grid grid-cols-12 gap-4 my-12'>
         <div className="col-span-6 lg:col-span-4 w-full mx-auto">
           <video autoPlay loop muted controls playsInline webkit-playsinline>
@@ -401,7 +429,7 @@ function App() {
       </div>
     </section>
 
-    <section className='mt-40'> {/*  VID 3 BROADCAST */}
+    <section className='md:mt-40 mt-20'> {/*  VID 3 BROADCAST */}
       <div className="grid grid-cols-12 gap-4 mt-24">
         <div className="col-span-6 lg:col-span-4 w-full mx-auto">
           <video autoPlay loop muted controls playsInline webkit-playsinline>
@@ -434,97 +462,152 @@ function App() {
           </video>
         </div>
         <div className="col-span-6 lg:col-span-4 w-full mx-auto">
-          <img src={BroadcastVideo7}/>
+          <img src={BroadcastVideo7} alt="Broadcast 7 image"/>
         </div>
         <div className="col-span-6 lg:col-span-4 w-full mx-auto">
-          <img src={BroadcastVideo8}/>
+          <img src={BroadcastVideo8} alt="Broadcast 8 image"/>
         </div>
         <div className="col-span-6 lg:col-span-4 w-full mx-auto">
-          <img src={BroadcastVideo9}/>
+          <img src={BroadcastVideo9} alt="Broadcast 9 image"/>
         </div>
       </div>
     </section>
 
-    <section className='mt-60'> {/*  PLACEHOLDER */}
-      <div className="w-full h-60 rounded-lg bg-white"></div>
+    <section className='md:mt-60 mt-32'> {/*  BRANDING */}
+      <img src={BrandingBanner} className='w-full' alt="Branding banner image"/>
     </section>
 
-    <section className='mt-40'> {/*  FREE FROM LIMITS */}
-      <img src={FreeFromLimitBranding} className="w-full" alt="Free from limit branding img"/>
+    <section className='md:mt-40 mt-20'> {/* LETS CREATE BRANDING IMG */}
+      <img src={Branding1} className="w-full" alt="Lets create branding image"/>
     </section>
 
-    <section className='mt-40'> {/*  TEST CANVA */}
-      <img src={TestCanva} className="w-full" alt="Test Canva img"/>
+    <section className='md:mt-40 mt-20'> {/*  TEST CANVA */}
+      <img src={Branding2} className="w-full" alt="Test Canva branding image"/>
     </section>
 
-    <section className='mt-40'> {/*  SARA BRANDING */}
-      <img src={SaraBranding} className="w-full" alt="Sara Branding img"/>
+    <section className='md:mt-40 mt-20'> {/*  FREE FROM LIMITS */}
+      <img src={Branding3} className="w-full" alt="Free from limits branding image"/>
     </section>
 
-    <section className='mt-60'> {/*  PLACEHOLDER */}
-      <div className="w-full h-60 rounded-lg bg-white"></div>
+    <section className='md:mt-40 mt-20'> {/*  SARA BRANDING */}
+      <img src={Branding4} className="w-full" alt="Sara Branding image"/>
     </section>
 
-    <section className='mt-40'> {/*  PLACEHOLDER */}
-      <div className="w-full h-96 rounded-lg bg-white"></div>
+    <section className='md:mt-60 mt-32'> {/*  LOGO */}
+      <img src={LogoBanner} className='w-full' alt="Logo banner image"/>
     </section>
 
-    <section className='mt-40'> {/*  PLACEHOLDER */}
-      <div className="w-full h-96 rounded-lg bg-white"></div>
+    <section className='md:mt-40 mt-20'> {/*  LOGO 1 TEMP */}
+      <img src={Logo1} className="w-full" alt="Logo 1 image"/>
     </section>
 
-    <section className='mt-40'> {/*  SOCMED 1 */}
-      <img src={Socmed1} className="w-full" alt="Social Media 1 img"/>
+    <section className='md:mt-40 mt-20'> {/*  SOCMED */}
+      <img src={SocmedBanner} className='w-full' alt="Social media banner image"/>
     </section>
 
-    <section className='mt-40'> {/*  SOCMED 2 */}
-      <img src={Socmed2} className="w-full" alt="Social Media 2 img"/>
+    <section className='md:mt-40 mt-20'> {/*  SOCMED 1 */}
+      <img src={Socmed1} className="w-full" alt="Social Media 1 image"/>
     </section>
 
-    <section className='mt-60'> {/*  SOCMED 3 */}
-      <img src={Socmed3} className="w-full" alt="Social Media 3 img"/>
+    <section className='md:mt-40 mt-20'> {/*  SOCMED 2 */}
+      <img src={Socmed2} className="w-full" alt="Social Media 2 image"/>
     </section>
 
-    <section className='mt-40'> {/*  PLACEHOLDER */}
-      <div className="w-full h-96 rounded-lg bg-white"></div>
+    <section className='md:mt-60 mt-32'> {/*  SOCMED 3 */}
+      <img src={Socmed3} className="w-full" alt="Social Media 3 image"/>
     </section>
 
-    <section className='mt-40'> {/*  PLACEHOLDER */}
-      <div className="w-full h-96 rounded-lg bg-white"></div>
+    <section className='md:mt-40 mt-20'> {/*  PRESENTATION AND DESIGN */}
+      <img src={PresentationBanner} className='w-full' alt="Presentation banner image"/>
     </section>
 
-    <div className='bg-black min-h-96 mt-40 relative bottom-0 py-16' id="footer"> {/*  FOOTER */}
-      <section className='grid grid-rows-4 grid-cols-3 gap-12'>
-        {/* 1ST COLUMNN */}
-        <div className='row-span-2 col-span-1 bg-white w-full h-full'></div>
-        <div className='row-span-2 row-start-3 col-span-1 lg:text-8xl text-lg'>Work <br/>with me</div>
-        {/* 2ND COLUMN */}
-        <div className='row-span-4 col-span-1 col-start-2 bg-white w-full h-full'></div>
-        {/* 3RD COLUMN */}
-        <div className='row-span-1 col-span-1 col-start-3'><hr className="w-full border"/></div>
-        <div className='row-span-1 row-start-2 col-span-1 col-start-3 flex gap-4'>
-          <CiLocationOn className='text-3xl lg:text-5xl'/>
-          <p className='flex-1 break-all'>
-            Address <br/>
-            123 Anywhere St., Any City <br/>
-            State, Country 12345
-          </p>
+    <section className='md:mt-40 mt-20'> {/*  PRESENTATION 1 */}
+      <img src={Presentation1} className='w-full' alt="Presentation 1 image"/>
+    </section>
+
+    <section className='md:mt-60 mt-32'> {/*  OTHER PROJECTS */}
+      <img src={OtherBanner} className='w-full' alt="Other projects banner image"/>
+    </section>
+
+    <section className='md:mt-40 mt-20'> {/*  OTHER PROJECTS 1 */}
+      <img src={Other1} className='w-full' alt="Other project 1 image"/>
+    </section>
+
+    <section className='md:mt-60 mt-32'> {/*  PHOTOGRAPHY */}
+      <img src={PhotographyBanner} className='w-full' alt="Photography banner image"/>
+    </section>
+
+    <section className='md:mt-40 mt-20'> {/*  PHOTOGRAPHY 1 */}
+      <img src={Photog1} className='w-full' alt="Photography 1 image"/>
+    </section>
+
+    <section className='md:mt-40 mt-20'> {/*  PHOTOGRAPHY 2 */}
+      <img src={Photog2} className='w-full' alt="Photography 2 image"/>
+    </section>
+
+    <section className='md:mt-40 mt-20'> {/*  PHOTOGRAPHY 3 */}
+      <img src={Photog3} className='w-full' alt="Photography 3 image"/>
+    </section>
+
+    <section className='md:mt-60 mt-32'> {/*  PERSONAL */}
+      <img src={PersonalBanner} className='w-full' alt="Personal banner image"/>
+    </section>
+
+    <section className='md:mt-40 mt-20'> {/*  PERSONAL 1 */}
+      <img src={Personal1} className='w-full' alt="Personal 1 image"/>
+    </section>
+
+    <div className='bg-black md:mt-40 mt-20 relative bottom-0 py-16 md:h-[900px] h-auto' id="footer"> {/*  FOOTER */}
+      <section className="grid md:grid-cols-3 grid-cols-2 grid-rows-2 gap-12 text-white h-[550px]">
+        {/* 1 - Upper Left Image */}
+        <div className="col-span-1 col-start-1 row-span-1 row-start-1">
+            <img src={dp2} alt="Seb pic 2" className="w-full h-full" />
         </div>
-        <div className='row-span-1 row-start-3 col-span-1 col-start-3 flex gap-4'>
-          <MdOutlineEmail className='text-3xl lg:text-5xl' />
-          <p className='flex-1 break-all'>
-            Email <br />
-            joshestrella@gmail.com
-          </p>
+
+        {/* 2 - Lower Left "Work with me" */}
+        <div className="col-span-1 col-start-1 row-span-1 row-start-2 relative">
+            <p className="text-4xl md:text-6xl font-bold leading-tight absolute md:bottom-0">WORK WITH ME</p>
         </div>
-        <div className='row-span-1 row-start-4 col-span-1 col-start-3 flex gap-4'>
-          <CiPhone className='text-3xl lg:text-5xl'/>
-          <p className='flex-1 break-all'>
-            Phone <br/>
-            (123) 456 7890
-          </p>
+
+        {/* 3 - Center Column, Row-Span 3 */}
+        <div className="col-span-1 col-start-2 row-span-2 md:block hidden">
+            <img src={dp1} alt="Seb pic 1" className="w-full h-full" />
+        </div>
+
+        {/* 4 - Upper Right HR Line */}
+        <div className="col-span-1 md:col-start-3 col-start-2 row-span-2 flex flex-col h-full">
+          <div className="self-start w-full">
+              <hr className="w-full border mb-4" />
+          </div>
+
+          {/* Centered Email & Phone */}
+          <div className="flex flex-col md:justify-center flex-grow gap-6 md:mt-0 mt-12">
+              {/* Email */}
+              <div className="flex gap-4">
+                  <MdOutlineEmail className="text-3xl lg:text-5xl" />
+                  <p className="flex-1 break-all">
+                      Email <br />
+                      <span className="uppercase text-sm tracking-wide">josh.sebastiene@yahoo.com</span>
+                  </p>
+              </div>
+
+              {/* Phone */}
+              <div className="flex gap-4">
+                  <CiPhone className="text-3xl lg:text-5xl" />
+                  <p className="flex-1 break-all">
+                      Phone <br />
+                      +971 55-407-8558
+                  </p>
+              </div>
+          </div>
+            
+
         </div>
       </section>
+
+      <div className='absolute bottom-0 text-white text-center w-full p-4'>
+        <p>© Copyrights <span id="year"></span>, Josh Estrella</p>
+      </div>
     </div>
     </>
   );

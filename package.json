@@ -1,7 +1,7 @@
 {
   "name": "josh-portfolio",
   "version": "0.1.0",
-  "homepage": "https://j-estrella.github.io",
+  "homepage": "https://j-estrella.github.io/jestrella",
   "private": true,
   "dependencies": {
     "cra-template": "1.2.0",

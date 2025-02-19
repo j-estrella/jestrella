@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/jestrella/static/css/main.8d8c5e03.css",
-    "main.js": "/jestrella/static/js/main.4001f71d.js",
+    "main.js": "/jestrella/static/js/main.438d21d6.js",
     "static/js/488.7a4d4432.chunk.js": "/jestrella/static/js/488.7a4d4432.chunk.js",
     "static/media/lev 7-1.mp4": "/jestrella/static/media/lev 7-1.eb487332793cde85b82f.mp4",
     "static/media/personal-1.png": "/jestrella/static/media/personal-1.02d180a134128a83ee2e.png",
@@ -43,6 +43,7 @@
     "static/media/branding-4.png": "/jestrella/static/media/branding-4.fe4565a263ca40a9e077.png",
     "static/media/lev 8-1.jpg": "/jestrella/static/media/lev 8-1.58da401d9509edf9cf0e.jpg",
     "static/media/branding-1.png": "/jestrella/static/media/branding-1.e6c419d0f382f33b7463.png",
+    "static/media/Josh Estrella Resume.pdf": "/jestrella/static/media/Josh Estrella Resume.2a01e7b530addac228cd.pdf",
     "static/media/branding-2.png": "/jestrella/static/media/branding-2.cbddb566e04352edb75d.png",
     "static/media/BROADCAST-PAGE.png": "/jestrella/static/media/BROADCAST-PAGE.b06067b19248cb5dc2f5.png",
     "static/media/branding-3.png": "/jestrella/static/media/branding-3.5936999c755b4acdd1df.png",
@@ -52,7 +53,6 @@
     "static/media/PRESENTATION-BANNER.png": "/jestrella/static/media/PRESENTATION-BANNER.9df5cccf7b3270697e13.png",
     "static/media/PHOTOGRAPHY-BANNER.png": "/jestrella/static/media/PHOTOGRAPHY-BANNER.b8980f3c9acadc632d4a.png",
     "static/media/icon.png": "/jestrella/static/media/icon.200e14fd7fe242b34339.png",
-    "static/media/Josh Estrella Resume.pdf": "/jestrella/static/media/Josh Estrella Resume.5cd9073072ed8cb8b9cc.pdf",
     "static/media/LOGO-DESIGN.png": "/jestrella/static/media/LOGO-DESIGN.7fae1e7d37a2b263df29.png",
     "static/media/BRANDING-BANNER.png": "/jestrella/static/media/BRANDING-BANNER.ef0bba4ca11510f0a0c8.png",
     "static/media/BroadcastSoftware4.png": "/jestrella/static/media/BroadcastSoftware4.375d84dd1ba99b88de39.png",
@@ -67,11 +67,11 @@
     "static/media/BroadcastSoftware1.png": "/jestrella/static/media/BroadcastSoftware1.b5c1a2df6476ac650a18.png",
     "index.html": "/jestrella/index.html",
     "main.8d8c5e03.css.map": "/jestrella/static/css/main.8d8c5e03.css.map",
-    "main.4001f71d.js.map": "/jestrella/static/js/main.4001f71d.js.map",
+    "main.438d21d6.js.map": "/jestrella/static/js/main.438d21d6.js.map",
     "488.7a4d4432.chunk.js.map": "/jestrella/static/js/488.7a4d4432.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8d8c5e03.css",
-    "static/js/main.4001f71d.js"
+    "static/js/main.438d21d6.js"
   ]
 }

@@ -88,6 +88,7 @@ function App() {
       behavior: 'smooth',
     });
   }
+
   useEffect(() => {
     document.querySelector("#year").innerHTML = new Date().getFullYear();
 
@@ -262,7 +263,7 @@ function App() {
             <h2 className="text-2xl font-bold">NAOS ESPORTS</h2>
             <p className="text-2xl">COMMUNITY AND EVENTS CREATIVE</p>
           </div>
-          <p className="text-xl italic mt-auto">(2024-2025)</p>
+          <p className="text-xl italic mt-auto">(2023-2025)</p>
         </div>
 
         <div className="col-span-2 lg:col-span-1 flex flex-col justify-between border border-white text-center rounded-lg p-4 ">
@@ -271,7 +272,7 @@ function App() {
             <h2 className="text-2xl font-bold">INTEGREON INC.</h2>
             <p className="text-2xl">DESIGN ASSOCIATE</p>
           </div>
-          <p className="text-xl italic mt-auto">(2024-2025)</p>
+          <p className="text-xl italic mt-auto">(2023-2023)</p>
         </div>
 
         <div className="col-span-2 lg:col-span-1 flex flex-col justify-between border border-white text-center rounded-lg p-4 ">
@@ -280,7 +281,7 @@ function App() {
             <h2 className="text-2xl font-bold">INTEGREON INC.</h2>
             <p className="text-2xl">INDEPENDENT GRAPHIC SPECIALIST</p>
           </div>
-          <p className="text-xl italic mt-auto">(2023-2025)</p>
+          <p className="text-xl italic mt-auto">(2022-2023)</p>
         </div>
         
         <div className="col-span-2 lg:col-span-1 flex flex-col justify-between border border-white text-center rounded-lg p-4 ">
@@ -289,7 +290,7 @@ function App() {
             <h2 className="text-2xl font-bold">INTEGREON INC.</h2>
             <p className="text-2xl">GRAPHIC SPECIALIST</p>
           </div>
-          <p className="text-xl italic mt-auto">(2024-2025)</p>
+          <p className="text-xl italic mt-auto">(2019-2022)</p>
         </div>
 
         <div className="col-span-2 lg:col-span-1 flex flex-col justify-between border border-white text-center rounded-lg p-4 ">
@@ -298,7 +299,7 @@ function App() {
             <h2 className="text-2xl font-bold">SENATE PHILIPPINES</h2>
             <p className="text-2xl">GRAPHIC DESIGNER INTERNSHIP</p>
           </div>
-          <p className="text-xl italic mt-auto">(2024-2025)</p>
+          <p className="text-xl italic mt-auto">(2017-2018)</p>
         </div>
 
         <div className="col-span-2 lg:col-span-1 flex flex-col justify-between border border-white text-center rounded-lg p-4 ">
@@ -307,7 +308,7 @@ function App() {
             <h2 className="text-2xl font-bold">WEDROOL CLOTHING</h2>
             <p className="text-2xl">GRAPHIC DESIGNER ON-THE-JOB TRAINING</p>
           </div>
-          <p className="text-xl italic mt-auto">(2024-2025)</p>
+          <p className="text-xl italic mt-auto">(2017-2017)</p>
         </div>
       </div>
     </section>

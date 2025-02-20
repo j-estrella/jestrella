@@ -119,7 +119,7 @@ function App() {
     <IoArrowUpCircle  id="scroll-top"  onClick={handleReturnToTop} 
       className="w-12 h-12 z-50 fixed bottom-0 right-0 m-8 text-white cursor-pointer hidden"/>
 
-    <section className="h-32 flex items-center gap-8" id="navbar"> {/*  NAVBAR */}
+    <section className="h-32 flex items-center md:gap-8 gap-4" id="navbar"> {/*  NAVBAR */}
       <div className="flex-shrink-0 basis-16 flex justify-center items-center">
         {/* <div className='w-20 h-20 bg-white rounded-full'></div> */}
         <img src={icon} className='w-12 h-12' alt="Seb Logo"/>
@@ -129,18 +129,18 @@ function App() {
         <hr className="w-full border" />
       </div>
 
-      <div className="flex-shrink-0 flex gap-4 uppercase font-bold text-sm md:text-2xl">
+      <div className="flex-shrink-0 flex gap-4 uppercase font-bold text-sm md:text-xl">
         <a className='cursor-pointer' href="#portfolio">Portfolio</a>
         <a className='cursor-pointer' href="#work">Work Experience</a>
         <a className='cursor-pointer' href="#footer">Contact Me</a>
       </div>
     </section>
 
-    <section className="grid grid-cols-12"> {/*  1ST CONTENT */}
+    <section className="grid grid-cols-12 gap-8"> {/*  1ST CONTENT */}
         <div className='col-span-12 lg:col-span-7 order-2 lg:order-1 flex flex-col justify-center'>
-            <p className="text-8xl uppercase font-bold">Josh <br/>Estrella</p><br/>
+            <p className="md:text-8xl text-7xl uppercase font-bold">Josh <br/>Estrella</p><br/>
             <p className="uppercase tracking-widest">graphic designer / multimedia artist</p><br/>
-            <p>
+            <p className='md:w-11/12'>
               With six  years of experience specializing in Branding, Logo design, Layout design,
               Illustration, Social Media Design, Adobe Creative Suit, Animation, Video Editing,
               and Powerpoint Presentation Design, allowing me to create dynamic and visually
@@ -163,7 +163,7 @@ function App() {
 
     <section className='md:mt-40 mt-20'> {/*  EXPERTISE */}
       <div className='flex flex-col gap-4'>
-        <p className='text-7xl font-bold uppercase'>Expertise</p>
+        <p className='md:text-7xl text-5xl font-bold uppercase'>Expertise</p>
         <hr className="w-full sm:w-32 mx-auto sm:mx-0 border-4" />
       </div>
 
@@ -243,7 +243,7 @@ function App() {
 
     <section className='md:mt-40 mt-20' id="work"> {/*  WORK EXP */}
       <div className='flex flex-col gap-4'>
-        <p className='text-7xl font-bold uppercase'>Work Experience</p>
+        <p className='md:text-7xl text-5xl font-bold uppercase'>Work Experience</p>
         <hr className="w-56 border-4" />
       </div>
 
@@ -588,30 +588,25 @@ function App() {
 
     <div className='bg-black md:mt-40 mt-20 relative bottom-0 py-16 md:h-[900px] h-auto' id="footer"> {/*  FOOTER */}
       <section className="grid md:grid-cols-3 grid-cols-2 grid-rows-2 gap-12 text-white h-[550px]">
-        {/* 1 - Upper Left Image */}
+
         <div className="col-span-1 col-start-1 row-span-1 row-start-1">
             <img src={dp2} alt="Seb pic 2" className="w-full h-full" />
         </div>
 
-        {/* 2 - Lower Left "Work with me" */}
         <div className="col-span-1 col-start-1 row-span-1 row-start-2 relative">
             <p className="text-4xl md:text-6xl font-bold leading-tight absolute md:bottom-0">WORK WITH ME</p>
         </div>
 
-        {/* 3 - Center Column, Row-Span 3 */}
         <div className="col-span-1 col-start-2 row-span-2 md:block hidden">
             <img src={dp1} alt="Seb pic 1" className="w-full h-full" />
         </div>
 
-        {/* 4 - Upper Right HR Line */}
         <div className="col-span-1 md:col-start-3 col-start-2 row-span-2 flex flex-col h-full">
           <div className="self-start w-full">
               <hr className="w-full border mb-4" />
           </div>
 
-          {/* Centered Email & Phone */}
           <div className="flex flex-col md:justify-center flex-grow gap-6 md:mt-0 mt-12">
-              {/* Email */}
               <div className="flex gap-4">
                   <MdOutlineEmail className="text-3xl lg:text-5xl" />
                   <p className="flex-1 break-all">
@@ -620,7 +615,6 @@ function App() {
                   </p>
               </div>
 
-              {/* Phone */}
               <div className="flex gap-4">
                   <CiPhone className="text-3xl lg:text-5xl" />
                   <p className="flex-1 break-all">

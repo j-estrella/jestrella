@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/jestrella/static/css/main.8d8c5e03.css",
-    "main.js": "/jestrella/static/js/main.438d21d6.js",
+    "main.css": "/jestrella/static/css/main.4c2d252d.css",
+    "main.js": "/jestrella/static/js/main.e7d19e67.js",
     "static/js/488.7a4d4432.chunk.js": "/jestrella/static/js/488.7a4d4432.chunk.js",
     "static/media/lev 7-1.mp4": "/jestrella/static/media/lev 7-1.eb487332793cde85b82f.mp4",
     "static/media/personal-1.png": "/jestrella/static/media/personal-1.02d180a134128a83ee2e.png",
@@ -33,13 +33,14 @@
     "static/media/PRESENTATION DESIGN.png": "/jestrella/static/media/PRESENTATION DESIGN.7da4b47d469f598a456d.png",
     "static/media/broadcast8.jpg": "/jestrella/static/media/broadcast8.077247f753c12e750887.jpg",
     "static/media/socmed-1.png": "/jestrella/static/media/socmed-1.1a4588e3bf5c7e9c810b.png",
-    "static/media/socmed-3.png": "/jestrella/static/media/socmed-3.062c037e8e8d42886353.png",
+    "static/media/socmed-3.png": "/jestrella/static/media/socmed-3.60d1bed3081bbcad7142.png",
     "static/media/socmed-2.png": "/jestrella/static/media/socmed-2.0bbcd84a5324cfc685a9.png",
     "static/media/LOGO COMPILATION-01.png": "/jestrella/static/media/LOGO COMPILATION-01.81b7742c909b0e862c93.png",
     "static/media/NVIDIA 1.mp4": "/jestrella/static/media/NVIDIA 1.5ce28b04cc03ac252ea9.mp4",
     "static/media/broadcast7.jpg": "/jestrella/static/media/broadcast7.c3e783140fe591321494.jpg",
     "static/media/dp1.png": "/jestrella/static/media/dp1.379d7ceb0870bdef5cd0.png",
     "static/media/broadcast9.jpg": "/jestrella/static/media/broadcast9.355db0d9aa784a088e1d.jpg",
+    "static/media/Montserrat.ttf": "/jestrella/static/media/Montserrat.4df14eb5e72bf55c4497.ttf",
     "static/media/branding-4.png": "/jestrella/static/media/branding-4.fe4565a263ca40a9e077.png",
     "static/media/lev 8-1.jpg": "/jestrella/static/media/lev 8-1.58da401d9509edf9cf0e.jpg",
     "static/media/branding-1.png": "/jestrella/static/media/branding-1.e6c419d0f382f33b7463.png",
@@ -66,12 +67,12 @@
     "static/media/INTEGREON COVER.png": "/jestrella/static/media/INTEGREON COVER.b01e6886ca813da94ea7.png",
     "static/media/BroadcastSoftware1.png": "/jestrella/static/media/BroadcastSoftware1.b5c1a2df6476ac650a18.png",
     "index.html": "/jestrella/index.html",
-    "main.8d8c5e03.css.map": "/jestrella/static/css/main.8d8c5e03.css.map",
-    "main.438d21d6.js.map": "/jestrella/static/js/main.438d21d6.js.map",
+    "main.4c2d252d.css.map": "/jestrella/static/css/main.4c2d252d.css.map",
+    "main.e7d19e67.js.map": "/jestrella/static/js/main.e7d19e67.js.map",
     "488.7a4d4432.chunk.js.map": "/jestrella/static/js/488.7a4d4432.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8d8c5e03.css",
-    "static/js/main.438d21d6.js"
+    "static/css/main.4c2d252d.css",
+    "static/js/main.e7d19e67.js"
   ]
 }

@@ -185,7 +185,7 @@ function App() {
 
     <section className="grid grid-cols-12 gap-8"> {/*  1ST CONTENT */}
         <div className='col-span-12 lg:col-span-7 order-2 lg:order-1 flex flex-col justify-center'>
-            <p className="md:text-8xl text-7xl uppercase font-bold md:text-justify text-center">Josh <br/>Estrella</p><br/>
+            <p className="md:text-8xl text-4xl uppercase font-bold md:text-justify text-center">Josh <br/>Estrella</p><br/>
             <p className="uppercase tracking-widest md:text-justify text-center">graphic designer / multimedia artist</p><br/>
             <p className='md:w-11/12 md:text-justify text-center'>
               With six  years of experience specializing in Branding, Logo design, Layout design,
@@ -210,7 +210,7 @@ function App() {
 
     <section className='md:mt-40 mt-20'> {/*  EXPERTISE */}
       <div className='flex flex-col gap-4'>
-        <p className='md:text-7xl text-5xl font-bold uppercase md:text-justify text-center'>Expertise</p>
+        <p className='md:text-7xl text-3xl font-bold uppercase md:text-justify text-center'>Expertise</p>
         <hr className="w-full md:w-32 mx-auto sm:mx-0 border-4" />
       </div>
 
@@ -290,7 +290,7 @@ function App() {
 
     <section className='md:mt-40 mt-20' id="work"> {/*  WORK EXP */}
       <div className='flex flex-col gap-4'>
-        <p className='md:text-7xl text-5xl font-bold uppercase md:text-justify text-center'>Work Experience</p>
+        <p className='md:text-7xl text-3xl font-bold uppercase md:text-justify text-center'>Work Experience</p>
         <hr className="md:w-56 w-full border-4" />
       </div>
 
@@ -298,64 +298,64 @@ function App() {
         <div className="col-span-2 lg:col-span-1 flex flex-col justify-between border border-white text-center rounded-lg p-4 ">
           <div className="flex flex-col gap-4 flex-grow">
             <img src={NaosBanner} alt="NAOS logo" className="mx-auto rounded-lg" />
-            <h2 className="text-2xl font-bold">NAOS ESPORTS</h2>
-            <p className="text-2xl">MULTIMEDIA ARTIST</p>
+            <h2 className="md:text-2xl text-md font-bold">NAOS ESPORTS</h2>
+            <p className="md:text-2xl text-md">MULTIMEDIA ARTIST</p>
           </div>
-          <p className="text-xl italic mt-auto">(2024-2025)</p>
+          <p className="md:text-xl text-sm italic mt-auto">(2024-2025)</p>
         </div>
 
         <div className="col-span-2 lg:col-span-1 flex flex-col justify-between border border-white text-center rounded-lg p-4">
           <div className="flex flex-col gap-4 flex-grow">
             <img src={NaosBanner} alt="NAOS logo" className="mx-auto" />
-            <h2 className="text-2xl font-bold">NAOS ESPORTS</h2>
-            <p className="text-2xl">COMMUNITY AND EVENTS CREATIVE</p>
+            <h2 className="md:text-2xl text-md font-bold">NAOS ESPORTS</h2>
+            <p className="md:text-2xl text-md">COMMUNITY AND EVENTS CREATIVE</p>
           </div>
-          <p className="text-xl italic mt-auto">(2023-2025)</p>
+          <p className="md:text-xl text-sm italic mt-auto">(2023-2025)</p>
         </div>
 
         <div className="col-span-2 lg:col-span-1 flex flex-col justify-between border border-white text-center rounded-lg p-4 ">
           <div className="flex flex-col gap-4 flex-grow">
             <img src={IntegreonBanner} alt="Integreon logo" className="mx-auto rounded-lg" />
-            <h2 className="text-2xl font-bold">INTEGREON INC.</h2>
-            <p className="text-2xl">DESIGN ASSOCIATE</p>
+            <h2 className="md:text-2xl text-md font-bold">INTEGREON INC.</h2>
+            <p className="md:text-2xl text-md">DESIGN ASSOCIATE</p>
           </div>
-          <p className="text-xl italic mt-auto">(2023-2023)</p>
+          <p className="md:text-xl text-sm italic mt-auto">(2023-2023)</p>
         </div>
 
         <div className="col-span-2 lg:col-span-1 flex flex-col justify-between border border-white text-center rounded-lg p-4 ">
           <div className="flex flex-col gap-4 flex-grow">
             <img src={IntegreonBanner} alt="Integreon logo" className="mx-auto rounded-lg" />
-            <h2 className="text-2xl font-bold">INTEGREON INC.</h2>
-            <p className="text-2xl">INDEPENDENT GRAPHIC SPECIALIST</p>
+            <h2 className="md:text-2xl text-md font-bold">INTEGREON INC.</h2>
+            <p className="md:text-2xl text-md">INDEPENDENT GRAPHIC SPECIALIST</p>
           </div>
-          <p className="text-xl italic mt-auto">(2022-2023)</p>
+          <p className="md:text-xl text-sm italic mt-auto">(2022-2023)</p>
         </div>
         
         <div className="col-span-2 lg:col-span-1 flex flex-col justify-between border border-white text-center rounded-lg p-4 ">
           <div className="flex flex-col gap-4 flex-grow">
             <img src={IntegreonBanner} alt="Integreon logo" className="mx-auto rounded-lg" />
-            <h2 className="text-2xl font-bold">INTEGREON INC.</h2>
-            <p className="text-2xl">GRAPHIC SPECIALIST</p>
+            <h2 className="md:text-2xl text-md font-bold">INTEGREON INC.</h2>
+            <p className="md:text-2xl text-md">GRAPHIC SPECIALIST</p>
           </div>
-          <p className="text-xl italic mt-auto">(2019-2022)</p>
+          <p className="md:text-xl text-sm italic mt-auto">(2019-2022)</p>
         </div>
 
         <div className="col-span-2 lg:col-span-1 flex flex-col justify-between border border-white text-center rounded-lg p-4 ">
           <div className="flex flex-col gap-4 flex-grow">
             <img src={SenateBanner} alt="Senate logo" className="mx-auto rounded-lg" />
-            <h2 className="text-2xl font-bold">SENATE PHILIPPINES</h2>
-            <p className="text-2xl">GRAPHIC DESIGNER INTERNSHIP</p>
+            <h2 className="md:text-2xl text-md font-bold">SENATE PHILIPPINES</h2>
+            <p className="md:text-2xl text-md">GRAPHIC DESIGNER INTERNSHIP</p>
           </div>
-          <p className="text-xl italic mt-auto">(2017-2018)</p>
+          <p className="md:text-xl text-sm italic mt-auto">(2017-2018)</p>
         </div>
 
         <div className="col-span-2 lg:col-span-1 flex flex-col justify-between border border-white text-center rounded-lg p-4 ">
           <div className="flex flex-col gap-4 flex-grow">
             <img src={WedroolBanner} alt="Wedrool logo" className="mx-auto rounded-lg" />
-            <h2 className="text-2xl font-bold">WEDROOL CLOTHING</h2>
-            <p className="text-2xl">GRAPHIC DESIGNER ON-THE-JOB TRAINING</p>
+            <h2 className="md:text-2xl text-md font-bold">WEDROOL CLOTHING</h2>
+            <p className="md:text-2xl text-md">GRAPHIC DESIGNER ON-THE-JOB TRAINING</p>
           </div>
-          <p className="text-xl italic mt-auto">(2017-2017)</p>
+          <p className="md:text-xl text-sm italic mt-auto">(2017-2017)</p>
         </div>
       </div>
     </section>

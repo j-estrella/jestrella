@@ -218,25 +218,25 @@ function App() {
         <p className='text-xl uppercase'>Editing Software</p>
         <div className='flex flex-wrap gap-4'>
           <div>
-            <img src={EditingSoftware1} className='w-16 h-16' alt="Adobe Photoshop Icon"/>
+            <img src={EditingSoftware1} className='md:w-16 w-12 md:h-16 h-12' alt="Adobe Photoshop Icon"/>
           </div>
           <div>
-            <img src={EditingSoftware2} className='w-16 h-16' alt="Adobe Illustrator Icon"/>
+            <img src={EditingSoftware2} className='md:w-16 w-12 md:h-16 h-12' alt="Adobe Illustrator Icon"/>
           </div>
           <div>
-            <img src={EditingSoftware3} className='w-16 h-16' alt="Adobe Lightroom Icon"/>
+            <img src={EditingSoftware3} className='md:w-16 w-12 md:h-16 h-12' alt="Adobe Lightroom Icon"/>
           </div>
           <div>
-            <img src={EditingSoftware4} className='w-16 h-16' alt="Adobe Premier Icon"/>
+            <img src={EditingSoftware4} className='md:w-16 w-12 md:h-16 h-12' alt="Adobe Premier Icon"/>
           </div>
           <div>
-            <img src={EditingSoftware5} className='w-16 h-16' alt="Adobe After Effects Icon"/>
+            <img src={EditingSoftware5} className='md:w-16 w-12 md:h-16 h-12' alt="Adobe After Effects Icon"/>
           </div>
           <div>
-            <img src={EditingSoftware6} className='w-16 h-16' alt="Canva Icon"/>
+            <img src={EditingSoftware6} className='md:w-16 w-12 md:h-16 h-12' alt="Canva Icon"/>
           </div>
           <div>
-            <img src={EditingSoftware7} className='w-16 h-16' alt="Capcut Icon"/>
+            <img src={EditingSoftware7} className='md:w-16 w-12 md:h-16 h-12' alt="Capcut Icon"/>
           </div>
         </div>
       </div>
@@ -245,25 +245,25 @@ function App() {
         <p className='text-xl uppercase'>Office tools</p>
         <div className='flex flex-wrap gap-4'>
           <div>
-            <img src={OfficeTools1} className='w-16 h-16' alt="Microsoft Powerpoint Icon"/>
+            <img src={OfficeTools1} className='md:w-16 w-12 md:h-16 h-12' alt="Microsoft Powerpoint Icon"/>
           </div>
           <div>
-            <img src={OfficeTools2} className='w-16 h-16' alt="Microsoft Word Icon"/>
+            <img src={OfficeTools2} className='md:w-16 w-12 md:h-16 h-12' alt="Microsoft Word Icon"/>
           </div>
           <div>
-            <img src={OfficeTools3} className='w-16 h-16' alt="Microsoft Excel Icon"/>
+            <img src={OfficeTools3} className='md:w-16 w-12 md:h-16 h-12' alt="Microsoft Excel Icon"/>
           </div>
           <div>
-            <img src={OfficeTools4} className='w-16 h-16' alt="Google Sheets Icon"/>
+            <img src={OfficeTools4} className='md:w-16 w-12 md:h-16 h-12' alt="Google Sheets Icon"/>
           </div>
           <div>
-            <img src={OfficeTools5} className='w-16 h-16' alt="Google Slides Icon"/>
+            <img src={OfficeTools5} className='md:w-16 w-12 md:h-16 h-12' alt="Google Slides Icon"/>
           </div>
           <div>
-            <img src={OfficeTools6} className='w-16 h-16' alt="Google Forms Icon"/>
+            <img src={OfficeTools6} className='md:w-16 w-12 md:h-16 h-12' alt="Google Forms Icon"/>
           </div>
           <div>
-            <img src={OfficeTools7} className='w-16 h-16' alt="Google Docs Icon"/>
+            <img src={OfficeTools7} className='md:w-16 w-12 md:h-16 h-12' alt="Google Docs Icon"/>
           </div>
         </div>
       </div>
@@ -272,16 +272,16 @@ function App() {
         <p className='text-xl uppercase'>Broadcast softwares</p>
         <div className='flex flex-wrap gap-4'>
           <div>
-            <img src={BroadcastSoftware1} className='w-16 h-16' alt="OBS Icon"/>
+            <img src={BroadcastSoftware1} className='md:w-16 w-12 md:h-16 h-12' alt="OBS Icon"/>
           </div>
           <div>
-            <img src={BroadcastSoftware2} className='w-16 h-16' alt="Streamlabs Icon"/>
+            <img src={BroadcastSoftware2} className='md:w-16 w-12 md:h-16 h-12' alt="Streamlabs Icon"/>
           </div>
           <div>
-            <img src={BroadcastSoftware3} className='w-16 h-16' alt="Elgato Stream Deck Icon"/>
+            <img src={BroadcastSoftware3} className='md:w-16 w-12 md:h-16 h-12' alt="Elgato Stream Deck Icon"/>
           </div>
           <div>
-            <img src={BroadcastSoftware4} className='w-16 h-16' alt="GT Icon"/>
+            <img src={BroadcastSoftware4} className='md:w-16 w-12 md:h-16 h-12' alt="GT Icon"/>
           </div>
         </div>
       </div>

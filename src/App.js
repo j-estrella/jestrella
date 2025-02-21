@@ -1,5 +1,7 @@
-import { useEffect} from 'react';
+import { useState,useEffect } from "react";
 import { IoArrowUpCircle } from "react-icons/io5";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { IoMdCloseCircleOutline } from "react-icons/io";
 import './App.css';
 import icon from './assets/img/icon.png';
 import dp1 from './assets/img/dp1.png';
@@ -82,6 +84,17 @@ import { MdOutlineEmail } from "react-icons/md";
 import { CiPhone } from "react-icons/ci";
 
 function App() {
+  const [navbarOpen,setNavbarOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+
+  function navbarToggle() {
+    setNavbarOpen(!navbarOpen);
+  }
+
+  function clickMenu(){
+    setNavbarOpen(false);
+  }
+
   const handleReturnToTop = () => {
     window.scrollTo({
       top: 0,
@@ -113,15 +126,34 @@ function App() {
     };
   },[])
 
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(min-width: 768px)");
+
+    const handleResize = () => {
+      setIsMobile(!mediaQuery.matches);
+    };
+
+
+    handleResize();
+
+    mediaQuery.addEventListener("change", handleResize);
+
+    return () => {
+      mediaQuery.removeEventListener("change", handleResize);
+    };
+  }, []);
+
+
   return (
     <>
     {/* BTN RETURN TOP  */}
-    <IoArrowUpCircle  id="scroll-top"  onClick={handleReturnToTop} 
-      className="w-12 h-12 z-50 fixed bottom-0 right-0 m-8 text-white cursor-pointer hidden"/>
+    <a href="#">
+      <IoArrowUpCircle  id="scroll-top"  onClick={handleReturnToTop} 
+        className="w-12 h-12 z-50 fixed bottom-0 right-0 m-2 text-white cursor-pointer hidden"/>
+    </a>
 
-    <section className="h-32 flex items-center md:gap-8 gap-4" id="navbar"> {/*  NAVBAR */}
+    <section className="h-32 flex items-center md:justify-none justify-between md:gap-8 gap-4" id="navbar"> {/*  NAVBAR */}
       <div className="flex-shrink-0 basis-16 flex justify-center items-center">
-        {/* <div className='w-20 h-20 bg-white rounded-full'></div> */}
         <img src={icon} className='w-12 h-12' alt="Seb Logo"/>
       </div>
 
@@ -130,24 +162,39 @@ function App() {
       </div>
 
       <div className="flex-shrink-0 flex gap-4 uppercase font-bold text-sm md:text-xl">
-        <a className='cursor-pointer' href="#portfolio">Portfolio</a>
-        <a className='cursor-pointer' href="#work">Work Experience</a>
-        <a className='cursor-pointer' href="#footer">Contact Me</a>
+        <a className='cursor-pointer md:block hidden' href="#portfolio">Portfolio</a>
+        <a className='cursor-pointer md:block hidden' href="#work">Work Experience</a>
+        <a className='cursor-pointer md:block hidden' href="#footer">Contact Me</a>
+        <div>
+          {navbarOpen ? (<IoMdCloseCircleOutline className='w-8 h-8 cursor-pointer md:hidden block' onClick={navbarToggle}/>) 
+          :(<GiHamburgerMenu className='w-8 h-8 cursor-pointer md:hidden block' onClick={navbarToggle}/>)}
+        </div>
       </div>
     </section>
 
+    {/* NAVBAR TOGGLED MENU */}
+    {isMobile && navbarOpen && (  
+      <div className="absolute left-0 right-0 mx-auto bg-white w-[95%] h-auto p-8 flex flex-col gap-4 items-center text-center justify-center z-50">
+        <a href="#portfolio" onClick={clickMenu} className="hover:opacity-50 cursor-pointer">Portfolio</a>
+        <hr className="w-full text-gray-700" />
+        <a href="#work" onClick={clickMenu} className="hover:opacity-50 cursor-pointer">Work Experience</a>
+        <hr className="w-full text-gray-700" />
+        <a href="#footer" onClick={clickMenu} className="hover:opacity-50 cursor-pointer">Contact Me</a>
+      </div>
+    )}
+
     <section className="grid grid-cols-12 gap-8"> {/*  1ST CONTENT */}
         <div className='col-span-12 lg:col-span-7 order-2 lg:order-1 flex flex-col justify-center'>
-            <p className="md:text-8xl text-7xl uppercase font-bold">Josh <br/>Estrella</p><br/>
-            <p className="uppercase tracking-widest">graphic designer / multimedia artist</p><br/>
-            <p className='md:w-11/12'>
+            <p className="md:text-8xl text-7xl uppercase font-bold md:text-justify text-center">Josh <br/>Estrella</p><br/>
+            <p className="uppercase tracking-widest md:text-justify text-center">graphic designer / multimedia artist</p><br/>
+            <p className='md:w-11/12 md:text-justify text-center'>
               With six  years of experience specializing in Branding, Logo design, Layout design,
               Illustration, Social Media Design, Adobe Creative Suit, Animation, Video Editing,
               and Powerpoint Presentation Design, allowing me to create dynamic and visually
               engaging content. Dedicated to delivering high-quality work, I am passionate
               about design and committed to exceeding client expectations. 
             </p>
-            <a href={Resume} target="_blank">
+            <a href={Resume} className="md:mx-0 mx-auto" target="_blank">
               <button className="btn h-12 w-44 bg-white text-black uppercase px-4 mt-8">My Resume</button>
             </a>
         </div>
@@ -157,14 +204,14 @@ function App() {
         </div>
     </section>  
 
-    <section className='mt-12'> {/*  HR LINE */}
+    <section className='mt-12 md:block hidden'> {/*  HR LINE */}
       <hr className="w-full border" />
     </section>
 
     <section className='md:mt-40 mt-20'> {/*  EXPERTISE */}
       <div className='flex flex-col gap-4'>
-        <p className='md:text-7xl text-5xl font-bold uppercase'>Expertise</p>
-        <hr className="w-full sm:w-32 mx-auto sm:mx-0 border-4" />
+        <p className='md:text-7xl text-5xl font-bold uppercase md:text-justify text-center'>Expertise</p>
+        <hr className="w-full md:w-32 mx-auto sm:mx-0 border-4" />
       </div>
 
       <div className='flex flex-col gap-4 my-12'>
@@ -243,8 +290,8 @@ function App() {
 
     <section className='md:mt-40 mt-20' id="work"> {/*  WORK EXP */}
       <div className='flex flex-col gap-4'>
-        <p className='md:text-7xl text-5xl font-bold uppercase'>Work Experience</p>
-        <hr className="w-56 border-4" />
+        <p className='md:text-7xl text-5xl font-bold uppercase md:text-justify text-center'>Work Experience</p>
+        <hr className="md:w-56 w-full border-4" />
       </div>
 
       <div className="grid grid-cols-4 gap-4 my-12">

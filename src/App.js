@@ -185,7 +185,7 @@ function App() {
 
     <section className="grid grid-cols-12 gap-8"> {/*  1ST CONTENT */}
         <div className='col-span-12 lg:col-span-7 order-2 lg:order-1 flex flex-col justify-center'>
-            <p className="md:text-8xl text-4xl uppercase font-bold md:text-justify text-center">Josh <br/>Estrella</p><br/>
+            <p className="md:text-8xl text-5xl uppercase font-bold md:text-justify text-center">Josh <br/>Estrella</p><br/>
             <p className="uppercase tracking-widest md:text-justify text-center">graphic designer / multimedia artist</p><br/>
             <p className='md:w-11/12 md:text-justify text-center'>
               With six  years of experience specializing in Branding, Logo design, Layout design,
@@ -210,7 +210,7 @@ function App() {
 
     <section className='md:mt-40 mt-20'> {/*  EXPERTISE */}
       <div className='flex flex-col gap-4'>
-        <p className='md:text-7xl text-3xl font-bold uppercase md:text-justify text-center'>Expertise</p>
+        <p className='md:text-7xl text-4xl font-bold uppercase md:text-justify text-center'>Expertise</p>
         <hr className="w-full md:w-32 mx-auto sm:mx-0 border-4" />
       </div>
 
@@ -290,7 +290,7 @@ function App() {
 
     <section className='md:mt-40 mt-20' id="work"> {/*  WORK EXP */}
       <div className='flex flex-col gap-4'>
-        <p className='md:text-7xl text-3xl font-bold uppercase md:text-justify text-center'>Work Experience</p>
+        <p className='md:text-7xl text-4xl font-bold uppercase md:text-justify text-center'>Work Experience</p>
         <hr className="md:w-56 w-full border-4" />
       </div>
 

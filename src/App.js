@@ -21,8 +21,8 @@ import Footer from "./assets/components/Footer";
 function App() {
   return (
     <>
-      <BtnReturnTop/>
       <Navbar/>
+      <BtnReturnTop/>
       <MainSection/>
       <Expertise/>
       <WorkExperience/>
